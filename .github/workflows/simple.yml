@@ -15,3 +15,12 @@ jobs:
           import platform
           print(platform.processor())
         shell: python
+  run-windodws-commands:
+    runs-on: windows-latest
+    steps:
+      - name: Show Current directory Powershell
+        run: Get-Location
+      - name: Show Current directory Bash
+        run: pwd
+        shell: bash
+      
