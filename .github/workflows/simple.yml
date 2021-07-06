@@ -17,6 +17,7 @@ jobs:
         shell: python
   run-windodws-commands:
     runs-on: windows-latest
+    needs: [run-shell-command]
     steps:
       - name: Show Current directory Powershell
         run: Get-Location
